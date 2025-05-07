@@ -76,3 +76,15 @@ In order to test the effectiveness of our model, we have compared its performanc
 | Distil-SiamBERT (contrastive)   |                  **75.4150***                    |
 | Tiny-SiamBERT (triplet)         |                  **74.6667***                    |
 | Distil-SiamBERT (triplet)       |                  **77.3333***                    |
+
+
+
+### RAW-C (Related Words in Context)
+
+|            **Model**            |                   **Accuracy**                  |
+|---------------------------------|-------------------------------------------------|
+| GlossBERT                       |                  61.9047                        |
+| Tiny-SiamBERT (contrastive)     |                  **73.9540***                    |
+| Distil-SiamBERT (contrastive)   |                  **73.9540***                    |
+| Tiny-SiamBERT (triplet)         |                  **62.7976***                    |
+| Distil-SiamBERT (triplet)       |                  **69.3452***                    |
