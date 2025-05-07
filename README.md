@@ -57,12 +57,10 @@ In order to test the effectiveness of our model, we have compared its performanc
 
 ### SemEval 2015
 
-| Model          | Accuracy                             |
-|----------------|--------------------------------------|
-| Model Name     | TinyBERT                             |
-| Layers         | 4 or 6 (depending on version)        |
-| Hidden Size    | 312 or 768                           |
-| Parameters     | ~14M (TinyBERT-4) / ~66M (TinyBERT-6)|
-| Speed          | Up to 7.5× faster than BERT          |
-| Applications   | On-device NLP, low-latency inference |
-
+|            Model                |     Accuracy     |
+|---------------------------------|------------------|
+| GlossBERT                       |                  |
+| Tiny-SiamBERT (contrastive)     |                  |
+| Distil-SiamBERT (contrastive)   |                  |
+| Tiny-SiamBERT (triplet)         |                  |
+| Distil-SiamBERT (triplet)       |                  |
