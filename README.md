@@ -57,10 +57,10 @@ In order to test the effectiveness of our model, we have compared its performanc
 
 ### SemEval 2015
 
-|            Model                |     Accuracy     |
-|---------------------------------|------------------|
-| GlossBERT                       |                  |
-| Tiny-SiamBERT (contrastive)     |                  |
-| Distil-SiamBERT (contrastive)   |                  |
-| Tiny-SiamBERT (triplet)         |                  |
-| Distil-SiamBERT (triplet)       |                  |
+|            Model                |          Accuracy       |
+|---------------------------------|-------------------------|
+| GlossBERT                       |                         |
+| Tiny-SiamBERT (contrastive)     |                         |
+| Distil-SiamBERT (contrastive)   |                         |
+| Tiny-SiamBERT (triplet)         |                         |
+| Distil-SiamBERT (triplet)       |                         |
