@@ -51,3 +51,7 @@ For triplet loss, we again train both the models on **Context-Positive-Gloss-Neg
 In this step, we further fine-tune our model to focus on contextual meaning of the ambigous words instead of just learning up their different meanings. This helps our model to further refine its view of looking at different contexts in which the ambigous words are used and differentiate them effectively. For contrastive loss based model, we used combined **WiC (Words in Context) and Semcor 3.0** data in form of **Sentence 1,  Sentence 2, Ambigous Word,  Label**. Here first three features are self-explanatory while the feature **Label (0/1)** tells if the given word has been used in same context in both sentences or not.
 Similarly for triplet loss based model, we used **Semcor Triplets** to fine-tune. In this dataset, we have **Anchor Sentence, Positive Sentence, Negative Sentence**, all containing the ambigous word in target.
 
+
+## Results and Comparison
+In order to test our effectiveness of our model, we have compared its performance with **GlossBERT** model fine-tuned on **Semcor 3.0**. You can find this model at : [https://huggingface.co/kanishka/GlossBERT]
+(https://huggingface.co/kanishka/GlossBERT)
