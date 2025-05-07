@@ -32,3 +32,6 @@ In our approach to solve WSD problem, we use Siamese networks using Encoder mode
 | Accuracy Trade-off    | High accuracy       | ~97% of BERT-base       | ~96–98% of BERT-base    |
 | Distillation Type     | N/A                 | Task-agnostic           | Task-specific & general |
 
+
+The above specifications of the models help us in efficiently training and fine-tuning them for our task even in resource-constrained environment.
+
