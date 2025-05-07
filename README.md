@@ -88,3 +88,5 @@ In order to test the effectiveness of our model, we have compared its performanc
 | Distil-SiamBERT (contrastive)   |                  **73.9540***                    |
 | Tiny-SiamBERT (triplet)         |                  **62.7976***                    |
 | Distil-SiamBERT (triplet)       |                  **69.3452***                    |
+
+Our models consistently beats **GlossBERT** on these 3 evaluation datasets. All other code files, helper function/utilities, datasets and model weights can be found above in the repository.
