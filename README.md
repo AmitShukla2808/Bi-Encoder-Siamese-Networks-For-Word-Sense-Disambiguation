@@ -53,5 +53,4 @@ Similarly for triplet loss based model, we used **Semcor Triplets** to fine-tune
 
 
 ## Results and Comparison
-In order to test our effectiveness of our model, we have compared its performance with **GlossBERT** model fine-tuned on **Semcor 3.0**. You can find this model at : [https://huggingface.co/kanishka/GlossBERT]
-(https://huggingface.co/kanishka/GlossBERT)
+In order to test our effectiveness of our model, we have compared its performance with **GlossBERT** model fine-tuned on **Semcor 3.0**. You can find this model at : [https://huggingface.co/kanishka/GlossBERT](https://huggingface.co/kanishka/GlossBERT)
