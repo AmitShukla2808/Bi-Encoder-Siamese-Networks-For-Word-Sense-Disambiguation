@@ -64,3 +64,15 @@ In order to test the effectiveness of our model, we have compared its performanc
 | Distil-SiamBERT (contrastive)   |                  **60.7748**                    |
 | Tiny-SiamBERT (triplet)         |                  **68.2242**                    |
 | Distil-SiamBERT (triplet)       |                  **74.7663**                    |
+
+
+
+### SemEval 2013
+
+|            **Model**            |                   **Accuracy**                  |
+|---------------------------------|-------------------------------------------------|
+| GlossBERT                       |                  55.3333                        |
+| Tiny-SiamBERT (contrastive)     |                  **74.6442**                    |
+| Distil-SiamBERT (contrastive)   |                  **75.4150**                    |
+| Tiny-SiamBERT (triplet)         |                  **74.6667**                    |
+| Distil-SiamBERT (triplet)       |                  **77.3333**                    |
