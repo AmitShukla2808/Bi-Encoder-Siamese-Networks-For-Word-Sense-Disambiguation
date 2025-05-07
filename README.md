@@ -35,3 +35,16 @@ In our approach to solve WSD problem, we use Siamese networks using Encoder mode
 
 The above specifications of the models help us in efficiently training and fine-tuning them for our task even in resource-constrained environment.
 
+## Methodology (An Overview of Our Pipeline)
+
+We have built two variations of **SiamBert** (what we call our model), one using **contrastive loss function** and other **triplet loss function**. These two loss functions perform exceptionally well in disambiguation type of task often used in face detection too.
+
+Our Siamese network is even flexible for using other models as encoder too. These encoders then along with feed forward layers is trained over various datasets for WSD task. As seen above, our model is trained in 2 steps : **Pre-training** and **Fine-tuning**.
+
+### Pre-training of SiamBERT
+
+In this step, based upon the loss function used, we train the model on **3** different datasets derived from **Semcore 3.0**. For contrastive loss, we train both **Tiny SiamBert** and **Distil SiamBert** on **Context-Gloss** and **Context-Hypernymy** datasets. This is very crucial as it helps our model to learn effectively about meanings and categories of various ambigous words used in a large variety of sentences.
+For triplet loss, we again train both the models on **Context-Positive-Gloss-Negative-Gloss** dataset. Through this, model tries to learn not only how ambigous words are used in context, it also learns how to differentiate between different meanings of the word.
+
+### Fine-tuning of SiamBERT
+
