@@ -43,8 +43,11 @@ Our Siamese network is even flexible for using other models as encoder too. Thes
 
 ### Pre-training of SiamBERT
 
-In this step, based upon the loss function used, we train the model on **3** different datasets derived from **Semcore 3.0**. For contrastive loss, we train both **Tiny SiamBert** and **Distil SiamBert** on **Context-Gloss** and **Context-Hypernymy** datasets. This is very crucial as it helps our model to learn effectively about meanings and categories of various ambigous words used in a large variety of sentences.
+In this step, based upon the loss function used, we train the model on **3** different datasets derived from **Semcor 3.0**. For contrastive loss, we train both **Tiny SiamBert** and **Distil SiamBert** on **Context-Gloss** and **Context-Hypernymy** datasets. This is very crucial as it helps our model to learn effectively about meanings and categories of various ambigous words used in a large variety of sentences.
 For triplet loss, we again train both the models on **Context-Positive-Gloss-Negative-Gloss** dataset. Through this, model tries to learn not only how ambigous words are used in context, it also learns how to differentiate between different meanings of the word.
 
 ### Fine-tuning of SiamBERT
+
+In this step, we further fine-tune our model to focus on contextual meaning of the ambigous words instead of just learning up their different meanings. This helps our model to further refine its view of looking at different contexts in which the ambigous words are used and differentiate them effectively. For contrastive loss based model, we used combined **WiC (Words in Context) and Semcor 3.0** data in form of **Sentence 1,  Sentence 2, Ambigous Word,  Label**. Here first three features are self-explanatory while the feature **Label (0/1)** tells if the given word has been used in same context in both sentences or not.
+Similarly for triplet loss based model, we used **Semcor Triplets** to fine-tune. In this dataset, we have **Anchor Sentence, Positive Sentence, Negative Sentence**, all containing the ambigous word in target.
 
