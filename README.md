@@ -8,4 +8,6 @@ The complete pipeline is given and discussed below
 
 ![INLP_pipeline](https://github.com/user-attachments/assets/d7d5c270-b2e9-466a-860d-a6daf9aa2e22)
 
-Word S
+## Word Sense Disambiguation
+
+Word Sense Disambiguation (WSD) is a fundamental task in Natural Language Processing (NLP) that involves determining the correct meaning (sense) of a word based on its context. Many words in natural language are polysemous — they have multiple meanings depending on usage. For example, the word "bank" can refer to a financial institution or the side of a river. WSD aims to resolve such ambiguities by assigning the most appropriate sense from a predefined inventory (like WordNet) or through contextual modeling. Accurate WSD is critical for improving machine understanding in applications such as machine translation, information retrieval, question answering, and semantic search.
