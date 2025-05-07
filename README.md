@@ -52,5 +52,17 @@ In this step, we further fine-tune our model to focus on contextual meaning of t
 Similarly for triplet loss based model, we used **Semcor Triplets** to fine-tune. In this dataset, we have **Anchor Sentence, Positive Sentence, Negative Sentence**, all containing the ambigous word in target.
 
 
-## Results and Comparison
-In order to test our effectiveness of our model, we have compared its performance with **GlossBERT** model fine-tuned on **Semcor 3.0**. You can find this model at : [https://huggingface.co/kanishka/GlossBERT](https://huggingface.co/kanishka/GlossBERT)
+## Results and Evaluation
+In order to test the effectiveness of our model, we have compared its performance with **GlossBERT** model fine-tuned on **Semcor 3.0**. You can find this model at : [https://huggingface.co/kanishka/GlossBERT](https://huggingface.co/kanishka/GlossBERT) For this task, we have used **SemEval 2013**, **SemEval 2015** and **RAW-C (Related Words in Context)** datasets to assess our performance. The accuracies achieved by all models have been tabulated below:
+
+### SemEval 2015
+
+| Model          | Accuracy                             |
+|----------------|--------------------------------------|
+| Model Name     | TinyBERT                             |
+| Layers         | 4 or 6 (depending on version)        |
+| Hidden Size    | 312 or 768                           |
+| Parameters     | ~14M (TinyBERT-4) / ~66M (TinyBERT-6)|
+| Speed          | Up to 7.5× faster than BERT          |
+| Applications   | On-device NLP, low-latency inference |
+
